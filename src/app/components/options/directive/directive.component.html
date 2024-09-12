@@ -1,0 +1,18 @@
+<div class="standard">
+  <h1>Un petit test sur des directive</h1>
+  <p appHighlight>Je réagis au clic avec un @HostListener</p>
+  <p>Je <span appHighlight2>tente</span> ça !</p>
+  <p appHighlight3>Je réagis au survol</p>
+  <p appHighlight4 [color]="'blue'">Moi aussi <span appHighlight4 [color]="'red'">, mais avec un Input, </span>qui permet de varier la couleur</p>
+<div>
+  <h2>Un petit sélecteur de couleur</h2>
+  <input type="radio" name="colors" (click)="colorSelected='green'">Green
+  <input type="radio" name="colors" (click)="colorSelected='yellow'">Yellow
+  <input type="radio" name="colors" (click)="colorSelected='cyan'">Cyan
+
+  <p appHighlight4 [color]="colorSelected">Survole moi et vois la couleur ! (pas de e 2e Input couleur par défaut)</p>
+  <p appHighlight4 [color]="colorSelected" [defaultColor]="'violet'">Survole moi et vois la couleur ! (2e Input, couleur par défaut)</p>
+
+</div>
+</div>
+

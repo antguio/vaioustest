@@ -1,0 +1,15 @@
+mat-toolbar{
+  background-color: #eab996;
+
+  mat-menu {
+    z-index: 1000;
+  }
+
+}
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.cdk-overlay-container{
+  background-color: blue;
+}
